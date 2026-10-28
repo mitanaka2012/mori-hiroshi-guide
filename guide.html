@@ -239,7 +239,7 @@ ww:{name:'WW シリーズ',c:'--ww',cl:'--wwl',
  [14,'つくねもハンバーグ','2025/12','エッセィ','第14作。短いフレーズと考察で綴るエッセィ。',[],'']]}
 };
 const WPATH=['日本','チベット','チベット','フランス','アフリカ南端','北極','インド','エジプト','日本','日本'];
-const KEYS=['sm','v','sh','mr','g','sc','mizu','z','vs','x','w','ww','xx','short','etc','cream'];
+const KEYS=['sm','v','sh','mr','g','x','w','ww','xx','sc','mizu','z','vs','short','etc','cream'];
 let cur=(KEYS.includes(location.hash.slice(1))?location.hash.slice(1):'sm'), curMode='ac';
 const $=id=>document.getElementById(id);
 
@@ -274,9 +274,9 @@ function render(){
 }
 
 const TABS=[
- ['sm','S&M'],['v','V'],['sh','四季'],['mr','百年'],['g','G'],['sc','スカイ・クロラ'],
- ['mizu','水柿'],['z','Z'],['vs','ヴォイド・シェイパ'],['x','X'],['w','W'],['ww','WW'],
- ['xx','XX'],['short','短編集'],['etc','シリーズ外'],['cream','クリーム']
+ ['sm','S&M'],['v','V'],['sh','四季'],['mr','百年'],['g','G'],['x','X'],
+ ['w','W'],['ww','WW'],['xx','XX'],['sc','スカイ・クロラ'],['mizu','水柿'],['z','Z'],
+ ['vs','ヴォイド・シェイパ'],['short','短編集'],['etc','シリーズ外'],['cream','クリーム']
 ];
 TABS.forEach(([k,label])=>{
  const b=document.createElement('button');
